@@ -1,4 +1,4 @@
-🐱 **戆北在coding** · Profile README（主页 Overview 显示本文件内容）
+🐱 **戆北在coding** · Profile README
 
 <div align="center">
 
@@ -281,9 +281,9 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 </pre>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko/master/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko/master/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko/master/output/github-contribution-grid-snake.svg" alt="猫在追鱼干 · 贡献热力图动效" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./output/github-contribution-grid-snake.svg" />
+  <img src="./output/github-contribution-grid-snake.svg" alt="猫在追鱼干 · 贡献热力图动效" width="100%" />
 </picture>
 
 <sub>画像が逃げたにゃ…？→ 再跑一次 workflow 或稍后再来</sub>

@@ -9,6 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - main
       - master
     paths:
       - ".github/workflows/snake.yml"
@@ -32,7 +33,7 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=F97316&color_dots=#ebedf0,#ffedd5,#fdba74,#f97316,#ea580c
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=F97316&color_dots=#161b22,#3f2d2a,#c2410c,#f97316,#fb7185
 
-      - name: Commit snake SVG to master/output
+      - name: Commit snake SVG to main/output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
