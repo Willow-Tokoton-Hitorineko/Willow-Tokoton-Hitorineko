@@ -1,0 +1,33 @@
+# 猫在追鱼干：贡献热力图 → 橙粉蛇形路径 SVG（猫窝配色）
+# https://github.com/Platane/snk
+
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=F97316&color_dots=#ebedf0,#ffedd5,#fdba74,#f97316,#ea580c
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=F97316&color_dots=#161b22,#3f2d2a,#c2410c,#f97316,#fb7185
+
+      - name: Publish snake to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          destination_dir: output

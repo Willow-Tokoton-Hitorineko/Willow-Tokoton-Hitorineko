@@ -1,0 +1,11 @@
+# 本地 IDE / 技能文件，不要进 Profile 仓库
+.cursor/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+
+# 若以后有密钥，切勿提交
+.env
+*.pem
