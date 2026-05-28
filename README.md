@@ -1,5 +1,3 @@
-🐱 **戆北在coding** · Profile README
-
 <div align="center">
 
 <!-- 顶部三句轮播；; 分隔 -->
@@ -16,7 +14,7 @@
 
 <br/>
 
-[![Profile views](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB%E8%B6%B3&color=F97316&style=for-the-badge)](https://github.com/Willow-Tokoton-Hitorineko)
+[![Profile views](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&color=F97316&style=flat)](https://github.com/Willow-Tokoton-Hitorineko)
 
 </div>
 
@@ -147,7 +145,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 <b>魔法</b> · 歌姬具现·ACE 翻唱召唤術（AI 翻唱魔法）
 </td>
 </tr>
-<tr><td><b>🏠 装修中</b></td><td>Profile README（就是你现在看的这页）</td></tr>
+<tr><td><b>🏠 装修中</b></td><td>猫窝主页（就是你现在看的这页）</td></tr>
 <tr><td><b>🎯 下一步</b></td><td>把第一个公开仓库放进下面的猫箱</td></tr>
 </table>
 
@@ -251,8 +249,6 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 ## 📊 猫の戦績
 
-<p align="center"><sub>外链统计 · 国内可能加载慢 · 新账号数据较少属正常</sub></p>
-
 <div align="center">
 
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Willow-Tokoton-Hitorineko&theme=transparent&hide_border=true&background=00000000&ring=F97316&fire=FB7185&currStreakLabel=F97316&sideLabels=6B7280&dates=6B7280" alt="Streak stats" />
@@ -267,10 +263,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 ## 🐱 猫在追鱼干
 
-<p align="center">
-<sub>🐱 追鱼干にゃ · 绿格动效 = <strong>贡献蛇路径</strong>（橙粉猫窝色）</sub><br/>
-<sub>每日 Actions 更新 · 首次无图 → <strong>Actions</strong> 运行 <strong>Generate contribution snake</strong> → 等 1～2 分钟</sub>
-</p>
+<p align="center"><sub>🐱 追鱼干にゃ · 沿贡献格巡游（橙粉猫窝色）</sub></p>
 
 <div align="center">
 
@@ -285,8 +278,6 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
   <source media="(prefers-color-scheme: light)" srcset="./output/github-contribution-grid-snake.svg" />
   <img src="./output/github-contribution-grid-snake.svg" alt="猫在追鱼干 · 贡献热力图动效" width="100%" />
 </picture>
-
-<sub>画像が逃げたにゃ…？→ 再跑一次 workflow 或稍后再来</sub>
 
 </div>
 
