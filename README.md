@@ -249,16 +249,11 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 ## 📊 猫の戦績
 
-<p align="center"><sub>第三方统计图 · 新账号可能较空 · 加载慢请刷新</sub></p>
+<p align="center"><sub>外链统计 · 国内可能加载慢 · 新账号数据较少属正常</sub></p>
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Willow-Tokoton-Hitorineko&show_icons=true&theme=transparent&hide_border=true&title_color=F97316&icon_color=FB7185&text_color=6B7280&bg_color=00000000" alt="GitHub stats" />
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Willow-Tokoton-Hitorineko&theme=transparent&hide_border=true&background=00000000&ring=F97316&fire=FB7185&currStreakLabel=F97316&sideLabels=6B7280&dates=6B7280" alt="Streak stats" />
-
-<br/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Willow-Tokoton-Hitorineko&layout=compact&theme=transparent&hide_border=true&title_color=F97316&text_color=6B7280&bg_color=00000000&langs_count=8" alt="Top languages" />
 
 <br/>
 
