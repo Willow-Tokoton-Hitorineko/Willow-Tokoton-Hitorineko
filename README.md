@@ -145,8 +145,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 <b>魔法</b> · 歌姬具现·ACE 翻唱召唤術（AI 翻唱魔法）
 </td>
 </tr>
-<tr><td><b>🏠 装修中</b></td><td>猫窝主页（就是你现在看的这页）</td></tr>
-<tr><td><b>🎯 下一步</b></td><td>把第一个公开仓库放进下面的猫箱</td></tr>
+<tr><td><b>🏠 已开源</b></td><td><a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（处女作 · 微信公众号爬虫）</td></tr>
 </table>
 
 <br/>
@@ -198,7 +197,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 歌姬   █░░░░░░░
 </pre>
 
-<p><sub>公开 repo 后猫箱 +1</sub></p>
+<p><sub>猫箱 +1 · 处女作微信爬虫已封装</sub></p>
 
 <img src="https://img.shields.io/badge/剑术-圣金蔷薇突刺流-F97316?style=flat-square" alt="剑术" /><br/>
 <img src="https://img.shields.io/badge/魔法-蟒語脚本術-3776AB?style=flat-square" alt="Python" /><br/>
@@ -237,13 +236,9 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 ## 📦 猫箱 · 精选仓库
 
-<p align="center"><em>猫箱还是空的にゃ～</em></p>
-
-<!-- 有 repo 后：
 | 项目 | 说明 |
 |:-----|:-----|
-| [名称](https://github.com/Willow-Tokoton-Hitorineko/名称) | 一句话 |
--->
+| [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 处女作 · 微信公众号爬虫 + 政策数据处理 |
 
 <p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
 
