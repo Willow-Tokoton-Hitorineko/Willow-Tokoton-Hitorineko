@@ -145,7 +145,10 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 <b>魔法</b> · 歌姬具现·ACE 翻唱召唤術（AI 翻唱魔法）
 </td>
 </tr>
-<tr><td><b>🏠 已开源</b></td><td><a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（处女作 · 微信公众号爬虫）</td></tr>
+<tr><td><b>🏠 已开源</b></td><td>
+<a href="https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline">finddr-fincmini-pipeline</a>（FinDDR · 财小析规则库 · Test Set #12）<br/>
+<a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（微信公众号爬虫）
+</td></tr>
 </table>
 
 <br/>
@@ -197,7 +200,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 歌姬   █░░░░░░░
 </pre>
 
-<p><sub>猫箱 +1 · 处女作微信爬虫已封装</sub></p>
+<p><sub>猫箱 +1 · FINDDR 规则库已开源</sub></p>
 
 <img src="https://img.shields.io/badge/剑术-圣金蔷薇突刺流-F97316?style=flat-square" alt="剑术" /><br/>
 <img src="https://img.shields.io/badge/魔法-蟒語脚本術-3776AB?style=flat-square" alt="Python" /><br/>
@@ -238,7 +241,8 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 | 项目 | 说明 |
 |:-----|:-----|
-| [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 处女作 · 微信公众号爬虫 + 政策数据处理 |
+| [finddr-fincmini-pipeline](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline) | ACM ICAIF 2025 FinDDR · 财小析（FinCMini Agent）规则库 · Test Set 第 12 |
+| [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 微信公众号爬虫 + 政策数据处理 |
 
 <p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
 
