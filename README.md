@@ -146,7 +146,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 </td>
 </tr>
 <tr><td><b>🏠 已开源</b></td><td>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline">finddr-fincmini-pipeline</a>（FinDDR · 财小析规则库 · Test Set #12）<br/>
+<a href="https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline">finddr-fincmini-pipeline</a>（FinDDR · 财小析规则库 · Test Set Rank #12）<br/>
 <a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（微信公众号爬虫）
 </td></tr>
 </table>
@@ -241,7 +241,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 | 项目 | 说明 |
 |:-----|:-----|
-| [finddr-fincmini-pipeline](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline) | ACM ICAIF 2025 FinDDR · 财小析（FinCMini Agent）规则库 · Test Set 第 12 |
+| [finddr-fincmini-pipeline](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline) | ACM ICAIF 2025 FinDDR · 财小析（FinCMini Agent）规则库 · Test Set Rank #12 |
 | [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 微信公众号爬虫 + 政策数据处理 |
 
 <p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
