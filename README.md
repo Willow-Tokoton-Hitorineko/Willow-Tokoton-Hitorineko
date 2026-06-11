@@ -147,7 +147,8 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 </tr>
 <tr><td><b>🏠 已开源</b></td><td>
 <a href="https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline">finddr-fincmini-pipeline</a>（FinDDR · 财小析规则库 · Test Set Rank #12）<br/>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（微信公众号爬虫）
+<a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（微信公众号爬虫）<br/>
+<a href="https://github.com/Willow-Tokoton-Hitorineko/policyscout">policyscout</a>（PolicyScout · 引导基金制度文本缺口诊断与多源采集 Agent）
 </td></tr>
 </table>
 
@@ -243,6 +244,7 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 |:-----|:-----|
 | [finddr-fincmini-pipeline](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline) | ACM ICAIF 2025 FinDDR · 财小析（FinCMini Agent）规则库 · Test Set Rank #12 |
 | [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 微信公众号爬虫 + 政策数据处理 |
+| [policyscout](https://github.com/Willow-Tokoton-Hitorineko/policyscout) | PolicyScout · 引导基金制度文本缺口诊断与多源采集 Agent |
 
 <p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
 
