@@ -10,6 +10,6 @@ ggf_agent — GGF-TWI 政府引导基金政策文本采集 Agent
 
 或命令行:
     python -m ggf_agent.server          # 启动本地 Web 服务
-    python -m ggf_agent.collect 深圳市 广东省  # CLI 采集
+    python -m ggf_agent.collect 某市 某省      # CLI 采集
 """
 __version__ = "0.1.0"

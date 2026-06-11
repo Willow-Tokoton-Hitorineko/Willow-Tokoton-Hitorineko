@@ -129,9 +129,9 @@ def filter_relevant(results: list[dict], city: str = "") -> list[dict]:
 
 
 if __name__ == "__main__":
-    results = search_sogou_weixin("乌鲁木齐 引导基金 管理办法")
+    results = search_sogou_weixin("引导基金 管理办法")
     print(f"命中 {len(results)} 条")
-    filtered = filter_relevant(results, "乌鲁木齐")
+    filtered = filter_relevant(results, "")
     print(f"制度相关: {len(filtered)} 条")
     for r in filtered[:5]:
         print(f"  {r['title'][:70]}")

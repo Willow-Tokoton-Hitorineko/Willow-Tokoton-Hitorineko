@@ -234,8 +234,8 @@ def collect_city(province: str, city: str, use_llm: bool = True,
 
 if __name__ == "__main__":
     import sys
-    city = sys.argv[1] if len(sys.argv) > 1 else "乌鲁木齐市"
-    province = sys.argv[2] if len(sys.argv) > 2 else "新疆维吾尔自治区"
+    city = sys.argv[1] if len(sys.argv) > 1 else "某市"
+    province = sys.argv[2] if len(sys.argv) > 2 else "某省"
     use_llm = "--no-llm" not in sys.argv
 
     print(f"采集: {province} {city}")

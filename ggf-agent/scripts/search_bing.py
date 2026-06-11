@@ -88,7 +88,7 @@ def search_bing(query: str, count: int = 15, timeout: int = 20) -> list[dict]:
 
 
 if __name__ == "__main__":
-    results = search_bing("乌鲁木齐 引导基金 管理办法")
+    results = search_bing("引导基金 管理办法")
     print(f"命中 {len(results)} 条")
     for r in results[:5]:
         print(f"  {r['title'][:70]}")
