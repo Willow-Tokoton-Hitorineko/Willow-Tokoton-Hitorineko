@@ -1,4 +1,4 @@
-# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 V5 预筛选 — 判断搜索结果是否为有效引导基金制度文本。
 

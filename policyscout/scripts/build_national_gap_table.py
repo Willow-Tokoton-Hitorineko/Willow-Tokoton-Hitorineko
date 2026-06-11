@@ -1,4 +1,4 @@
-# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 全国缺口表生成器 — 从主 flat 生成最新缺口表。
 

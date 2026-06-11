@@ -1,4 +1,4 @@
-# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 单城市多源采集 → V5预筛选 → 智能去重 → 保存候选列表。
 

@@ -1,4 +1,4 @@
-# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 搜狗微信搜索适配器 — 微信公众号文章检索。
 

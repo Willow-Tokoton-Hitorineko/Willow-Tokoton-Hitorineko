@@ -1,4 +1,4 @@
-"""ggf_agent 全局配置。路径感知包结构。"""
+"""policyscout 全局配置。路径感知包结构。"""
 from __future__ import annotations
 
 import os

@@ -31,17 +31,17 @@ ACM ICAIF 2025 FinDDR 赛事存档 · **Test Set Rank #12**（队名 DeepSeek Yo
 
 **不在本仓**: 原始年报（版权+体积）、API Key、队内私信、参赛证明
 
-### 3. ggf-agent（采集 Agent — 最新）
+### 3. policyscout（采集 Agent — 最新）
 政府引导基金制度文本缺口诊断与多源采集工具（硕士课题用）。
 **状态**: 活跃开发中 · 首个正经 Python package
 **关键路径**:
-- `ggf-agent/ggf_agent/server.py` — Web 服务入口（`python -m ggf_agent.server`）
-- `ggf-agent/ggf_agent/collect.py` — 采集编排器
-- `ggf-agent/ggf_agent/gap.py` — 单城市制度文本缺口诊断
-- `ggf-agent/ggf_agent/dashboard.py` — HTML 看板生成引擎
-- `ggf-agent/ggf_agent/prescreen.py` — 规则 + LLM 两级预筛选
-- `ggf-agent/ggf_agent/config.py` — 全局配置（含数据路径、API 设置、省份列表）
-- `ggf-agent/scripts/` — 已弃用的独立脚本（仅供参考，建议用 ggf_agent package）
+- `policyscout/policyscout/server.py` — Web 服务入口（`python -m policyscout.server`）
+- `policyscout/policyscout/collect.py` — 采集编排器
+- `policyscout/policyscout/gap.py` — 单城市制度文本缺口诊断
+- `policyscout/policyscout/dashboard.py` — HTML 看板生成引擎
+- `policyscout/policyscout/prescreen.py` — 规则 + LLM 两级预筛选
+- `policyscout/policyscout/config.py` — 全局配置（含数据路径、API 设置、省份列表）
+- `policyscout/scripts/` — 已弃用的独立脚本（仅供参考，建议用 policyscout package）
 
 **功能**:
 1. 搜狗微信搜索 → V5 预筛选（规则快判 + DeepSeek LLM 二分类）
@@ -72,7 +72,7 @@ ACM ICAIF 2025 FinDDR 赛事存档 · **Test Set Rank #12**（队名 DeepSeek Yo
 4. **公开行政区划列表是 OK 的**（中国省份名录 = 公共知识，非研究数据）
 
 ### Commit 风格
-- 参考历史: `add: ggf-agent — 引导基金制度文本缺口诊断与多源采集工具`
+- 参考历史: `add: policyscout — 引导基金制度文本缺口诊断与多源采集工具`
 - 格式: `type: short description — extended context`
 - Type: `add` / `docs` / `fix` / `chore`
 
@@ -80,12 +80,12 @@ ACM ICAIF 2025 FinDDR 赛事存档 · **Test Set Rank #12**（队名 DeepSeek Yo
 - `<div align="center">` 包裹的 header（项目名 + 一句话描述 + badges + 猫窝回链）
 - `🐾 ─────────── 🐱 ─────────── 🐾` 分隔线
 - "这是什么" + "能干什么" + 目录树 + 安装/运行 + 仓库范围表格 + 说明
-- 诚实说明局限性（处女座有屎山预警，ggf-agent 有"需要自备数据"前提）
+- 诚实说明局限性（处女座有屎山预警，policyscout 有"需要自备数据"前提）
 
 ## 当前进度（2026-06）
 
 - **剑术（课题）**: 引导基金 PMI 指数构建中，已完成 V6 flat 表 + 全国覆盖缺口诊断
-- **ggf-agent**: 刚上传至猫窝，核心功能可用。后续：北大法宝付费 API 对接、Bing 命中率改善、批量城市编排
+- **policyscout**: 刚上传至猫窝，核心功能可用。后续：北大法宝付费 API 对接、Bing 命中率改善、批量城市编排
 - **魔法（Python）**: 蟒語術初修，已能写 package + Web server + SSE
 - **FINDDR**: 赛事已完成，名次 #12，规则库归档完毕
 - **处女作**: 已归档，不打算更新

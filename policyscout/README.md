@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>ggf-agent</h1>
+<h1>PolicyScout</h1>
 
 <b>Government Guidance Fund · 制度文本缺口诊断与多源采集</b><br/>
 硕士课题用 · 替代人工逐市检索制度文本的体力活
@@ -55,7 +55,7 @@
 ## 目录
 
 ```
-ggf_agent/                主包
+policyscout/                主包
 ├── server.py             Web 服务（localhost:8765）
 ├── collect.py            采集编排（搜索→筛选→去重→保存）
 ├── gap.py                单城市制度文本缺口诊断
@@ -84,7 +84,7 @@ scripts/                  已弃用的独立脚本（仅供参考）
 
 ```bash
 git clone https://github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko.git
-cd Willow-Tokoton-Hitorineko/ggf-agent
+cd Willow-Tokoton-Hitorineko/policyscout
 pip install -r requirements.txt
 cp .env.example .env
 ```
@@ -97,14 +97,14 @@ cp .env.example .env
 
 ```bash
 # Web 界面（推荐）→ 浏览器打开 http://127.0.0.1:8765
-python -m ggf_agent.server
+python -m policyscout.server
 
 # CLI 采集
-python -m ggf_agent.collect 某市 某省
-python -m ggf_agent.collect 某市 某省 --no-llm   # 仅规则快判，不调 API
+python -m policyscout.collect 某市 某省
+python -m policyscout.collect 某市 某省 --no-llm   # 仅规则快判，不调 API
 ```
 
-**功能前提：** 需要已有数据库文件（`main_flat` CSV），路径见 `ggf_agent/config.py` 中的 `MAIN_FLAT`。没有这个文件的话，缺口诊断和去重比对无法工作——这工具做的是**增量采集**，不是从零建库。
+**功能前提：** 需要已有数据库文件（`main_flat` CSV），路径见 `policyscout/config.py` 中的 `MAIN_FLAT`。没有这个文件的话，缺口诊断和去重比对无法工作——这工具做的是**增量采集**，不是从零建库。
 
 <p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
 
@@ -137,7 +137,7 @@ python -m ggf_agent.collect 某市 某省 --no-llm   # 仅规则快判，不调 
 
 - 仅用于课题研究、个人学习；遵守微信公众号平台规则
 - 搜狗微信抓取依赖页面结构，不保证长期可用
-- `scripts/` 目录已弃用，保留供参考；建议使用 `ggf_agent` package
+- `scripts/` 目录已弃用，保留供参考；建议使用 `policyscout` package
 - MIT → [开源许可证](LICENSE)
 
 <p align="center"><sub>🐱 <a href="https://github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko">戆北在coding の猫窝</a> · 欢迎 Issue</sub></p>

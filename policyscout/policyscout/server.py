@@ -1,8 +1,8 @@
 """本地 HTTP 服务器 — 交互式城市采集界面 + SSE + 结果缓存。
 
 用法:
-    python -m ggf_agent.server          # 启动 localhost:8765
-    python -m ggf_agent.server --port 9000
+    python -m policyscout.server          # 启动 localhost:8765
+    python -m policyscout.server --port 9000
     浏览器打开 http://127.0.0.1:8765
 """
 from __future__ import annotations
@@ -228,7 +228,7 @@ def start_server(host: str = HOST, port: int = PORT):
     server = ThreadingHTTPServer((host, port), AgentHandler)
 
     url = f"http://{host}:{port}"
-    print(f"\n  ggf-agent: {url}")
+    print(f"\n  policyscout: {url}")
     print(f"  按 Ctrl+C 停止。\n")
     try:
         server.serve_forever()

@@ -1,4 +1,4 @@
-# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 Bing 搜索适配器 — 通过 cn.bing.com HTML 抓取（无需 API key）。
 

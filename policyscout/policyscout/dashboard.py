@@ -249,7 +249,7 @@ document.getElementById("tab-heatmap").innerHTML=h;
 }})();
 (function(){{
 var cs=P.candidates,h='';
-if(!cs.length){{h+='<div class="panel"><p style="color:var(--muted)">[无候选] 运行 ggf-agent collect '+P.city+' '+P.province+'</p></div>'}}
+if(!cs.length){{h+='<div class="panel"><p style="color:var(--muted)">[无候选] 运行 policyscout collect '+P.city+' '+P.province+'</p></div>'}}
 else{{
 h+='<div class="panel"><h2>采集候选 ('+(P.candidate_source||"")+')</h2>';
 h+='<div class="alert alert-info">搜狗微信搜索结果（预筛选后）。需人工下载原文放入 intake 目录，再运行 V5 结构化。</div>';

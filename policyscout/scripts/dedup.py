@@ -1,3 +1,4 @@
+# DEPRECATED — use policyscout package instead (from policyscout.xxx import ...)
 """
 全国范围全局去重引擎。
 
@@ -9,7 +10,7 @@
 输出: outputs/agent/global_duplicates.csv（标注 canonical_source_id，不自动删除）
 
 可被其他脚本 import 使用:
-    from ggf_agent.dedup import find_duplicates, generate_dedup_report
+    from scripts.agent.dedup import find_duplicates, generate_dedup_report
 """
 from __future__ import annotations
 
@@ -19,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from .config import MAIN_FLAT, OUTPUTS_DIR, INST_TYPES
+from config import MAIN_FLAT, OUTPUTS_DIR, INST_TYPES
 
 
 def jaccard_similarity(s1: str, s2: str) -> float:
