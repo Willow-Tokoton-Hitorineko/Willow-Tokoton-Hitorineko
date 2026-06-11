@@ -1,0 +1,4 @@
+pandas>=1.5
+requests>=2.28
+beautifulsoup4>=4.11
+openai>=1.0

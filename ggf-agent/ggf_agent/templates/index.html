@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GGF-TWI · 城市制度文本采集</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{
+  font-family:"PingFang SC","Microsoft YaHei","Plus Jakarta Sans",system-ui,sans-serif;
+  background:#f8f8f7;color:#1a1a18;scroll-behavior:smooth;
+}
+.en{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+
+.ambient-grain{
+  position:fixed;pointer-events:none;inset:0;z-index:0;opacity:.025;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-size:200px 200px;
+}
+
+nav{
+  position:fixed;top:1.25rem;left:50%;transform:translateX(-50%);z-index:100;
+  background:rgba(255,255,255,.78);backdrop-filter:blur(24px);
+  border:1px solid rgba(0,0,0,.06);border-radius:9999px;
+  padding:.45rem;display:flex;align-items:center;gap:.2rem;
+}
+nav button{
+  color:#6b6b65;font-size:.78rem;font-weight:500;
+  padding:.45rem 1rem;border-radius:9999px;border:none;background:transparent;
+  cursor:pointer;font-family:inherit;
+  transition:all .7s cubic-bezier(.32,.72,0,1);
+}
+nav button:hover{color:#1a1a18;background:rgba(0,0,0,.04)}
+nav button.nav-cta{background:#1a1a18;color:#f8f8f7;margin-left:.4rem}
+nav button.nav-cta:hover{background:#333;color:#f8f8f7}
+
+section{padding:3rem 2rem;position:relative;z-index:1}
+.inner{max-width:1280px;margin:0 auto}
+
+.eyebrow{
+  display:inline-flex;font-size:.65rem;font-weight:500;letter-spacing:.18em;
+  text-transform:uppercase;color:#6b6b65;
+  background:rgba(0,0,0,.03);border-radius:9999px;
+  padding:.35rem .8rem;margin-bottom:1.5rem;
+}
+h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:600;letter-spacing:-.035em;line-height:1.05;margin-bottom:1rem}
+h1 em{font-style:italic;color:#6b6b65}
+.hero-p{font-size:1rem;color:#6b6b65;line-height:1.5;margin-bottom:2rem}
+
+.bezel-outer{
+  background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.06);
+  border-radius:1.75rem;padding:.35rem;
+}
+.bezel-inner{
+  background:#fff;border-radius:calc(1.75rem - .35rem);
+  padding:2rem;box-shadow:inset 0 1px 1px rgba(255,255,255,.5);
+}
+
+.form-row{display:flex;gap:.65rem;flex-wrap:wrap;align-items:center}
+.input{
+  flex:1;min-width:160px;max-width:320px;padding:.8rem 1.05rem;border:1px solid rgba(0,0,0,.08);
+  border-radius:9999px;font-size:.9rem;font-family:inherit;background:rgba(0,0,0,.02);
+  transition:all .7s cubic-bezier(.32,.72,0,1);outline:none;
+}
+.input:focus{border-color:rgba(0,0,0,.2);background:#fff}
+
+.btn{
+  font-family:inherit;font-size:.85rem;font-weight:500;
+  padding:.8rem 1.6rem;border-radius:9999px;border:none;cursor:pointer;
+  display:inline-flex;align-items:center;gap:.65rem;
+  transition:all .7s cubic-bezier(.32,.72,0,1);white-space:nowrap;
+}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:#1a1a18;color:#f8f8f7;padding-right:.65rem}
+.btn-primary:hover{background:#333}
+.btn-icon-wrap{
+  width:1.8rem;height:1.8rem;border-radius:50%;
+  background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;
+  transition:all .7s cubic-bezier(.32,.72,0,1);
+}
+.btn-primary:hover .btn-icon-wrap{transform:translate(2px,-1px) scale(1.08);background:rgba(255,255,255,.2)}
+
+.btn-sm{
+  font-size:.75rem;padding:.5rem 1rem;border-radius:9999px;
+  border:1px solid rgba(0,0,0,.1);background:#fff;cursor:pointer;
+  font-family:inherit;color:#1a1a18;transition:all .5s ease;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+.btn-sm:hover{background:#1a1a18;color:#f8f8f7;border-color:#1a1a18}
+.btn-sm:disabled{opacity:.5;cursor:not-allowed}
+
+.progress-section{display:none;margin-top:1.25rem}
+.progress-section.show{display:block}
+.stage-row{display:flex;gap:.4rem;margin-bottom:.75rem;flex-wrap:wrap}
+.stage-pill{
+  flex:1;min-width:70px;text-align:center;padding:.5rem .3rem;border-radius:9999px;
+  font-size:.68rem;color:#b0b0aa;background:rgba(0,0,0,.025);transition:all .6s ease;
+}
+.stage-pill .n{display:block;font-size:1rem;font-weight:600;margin-bottom:.1rem}
+.stage-pill.active{background:#1a1a18;color:#f8f8f7}
+.stage-pill.done{background:rgba(0,0,0,.06);color:#1a1a18;font-weight:500}
+.bar-wrap{height:5px;background:rgba(0,0,0,.05);border-radius:3px;overflow:hidden;margin-bottom:.4rem}
+.bar{height:100%;background:#1a1a18;border-radius:3px;transition:width .5s ease;width:0}
+.bar-info{display:flex;justify-content:space-between;font-size:.7rem;color:#6b6b65;margin-bottom:.75rem}
+.log-box{
+  background:#1a1a18;color:#c4c4c4;border-radius:1rem;padding:1rem 1.15rem;
+  max-height:220px;overflow-y:auto;font-family:"SF Mono","Cascadia Code",Consolas,monospace;
+  font-size:.7rem;line-height:1.7;
+}
+.log-line{margin-bottom:1px}.log-line.ok{color:#86efac}.log-line.warn{color:#fbbf24}.log-line.error{color:#f87171}
+
+.result-section{display:none}
+.result-section.show{display:block}
+.result-section iframe{
+  width:100%;height:85vh;border:none;border-radius:1.5rem;
+  box-shadow:0 2px 40px rgba(0,0,0,.03),0 1px 2px rgba(0,0,0,.04);background:#fff;
+}
+.result-actions{display:flex;gap:.5rem;margin-top:.85rem;flex-wrap:wrap}
+
+.cached-select{margin-bottom:1.5rem;display:none}
+.cached-select.show{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;padding:1rem 1.25rem;background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.06);border-radius:1.25rem}
+.cached-select span.label{font-size:.75rem;color:#1a1a18;font-weight:600;letter-spacing:.04em;margin-right:.25rem}
+
+.reveal{
+  opacity:0;transform:translateY(24px) scale(.985);
+  transition:opacity .8s cubic-bezier(.32,.72,0,1),transform .8s cubic-bezier(.32,.72,0,1);
+}
+.reveal.visible{opacity:1;transform:translateY(0) scale(1)}
+
+@media(max-width:768px){
+  section{padding:3rem 1rem}
+  .form-row .input{min-width:100%}
+  .stage-row{flex-wrap:wrap}.stage-pill{flex:1 1 30%}
+  .bezel-inner{padding:1.25rem}
+}
+</style>
+</head>
+<body>
+<div class="ambient-grain" aria-hidden="true"></div>
+
+<nav>
+  <button onclick="location.hash='#top';window.scrollTo(0,0)">采集</button>
+  <button onclick="document.getElementById('results').scrollIntoView({behavior:'smooth'})" class="nav-cta">看板</button>
+</nav>
+
+<section id="top">
+  <div class="inner">
+    <span class="eyebrow reveal">Government Guidance Fund · Text Writing Index</span>
+    <h1 class="reveal">城市制度文本<em>缺口诊断</em>与采集</h1>
+    <p class="hero-p reveal">输入城市和省份，自动搜索制度文本 · 诊断覆盖缺口 · 生成交互看板</p>
+
+    <div class="cached-select reveal" id="cachedSelect">
+      <span class="label">已有采集结果</span>
+      <span id="cachedBtns" style="display:flex;gap:.4rem;flex-wrap:wrap"></span>
+    </div>
+
+    <div class="reveal">
+    <div class="bezel-outer">
+    <div class="bezel-inner">
+      <div class="form-row">
+        <input class="input" id="cityInput" placeholder="城市名（如：深圳市）" autofocus>
+        <input class="input" id="provInput" placeholder="省份（如：广东省）">
+        <button class="btn btn-primary" id="collectBtn" onclick="startCollect()">
+          开始采集
+          <span class="btn-icon-wrap">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7m10 0v10"/></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="progress-section reveal" id="progressSection">
+      <div class="bezel-outer">
+      <div class="bezel-inner">
+        <div class="stage-row" id="stages">
+          <div class="stage-pill active" id="stage-search"><span class="n">1</span>多源搜索</div>
+          <div class="stage-pill" id="stage-screen"><span class="n">2</span>预筛选</div>
+          <div class="stage-pill" id="stage-dedup"><span class="n">3</span>去重</div>
+          <div class="stage-pill" id="stage-gap"><span class="n">4</span>诊断</div>
+          <div class="stage-pill" id="stage-done"><span class="n">5</span>看板</div>
+        </div>
+        <div class="bar-wrap"><div class="bar" id="progressBar"></div></div>
+        <div class="bar-info"><span id="progressLabel">准备中...</span><span id="progressPct">0%</span></div>
+        <div class="log-box" id="logBox"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="inner">
+    <span class="eyebrow reveal">Collection Output</span>
+    <h2 class="reveal" style="font-size:clamp(1.5rem,3vw,2rem);font-weight:600;letter-spacing:-.02em;margin-bottom:1.5rem">交互看板</h2>
+    <div class="result-section reveal" id="resultSection">
+      <div class="bezel-outer">
+      <div class="bezel-inner" style="padding:.35rem">
+        <iframe id="resultFrame" title="制度文本缺口看板"></iframe>
+      </div>
+      </div>
+      <div class="result-actions">
+        <button class="btn-sm" onclick="downloadHTML()">下载 HTML</button>
+        <button class="btn-sm" onclick="downloadCSV()">下载 CSV</button>
+        <button class="btn-sm" onclick="resetAll()">重新开始</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+var dashboardHTML="",candidatesCSV="";
+
+(function(){
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add("visible")})},{threshold:.15});
+document.querySelectorAll(".reveal").forEach(function(el){obs.observe(el)});
+})();
+
+function addLog(msg,cls){cls=cls||"";var b=document.getElementById("logBox");b.innerHTML+='<div class="log-line '+cls+'">['+new Date().toLocaleTimeString()+'] '+msg+'</div>';b.scrollTop=b.scrollHeight}
+function setStage(n,s){document.getElementById("stage-"+n).className="stage-pill "+s}
+function setProgress(pct,label){
+document.getElementById("progressBar").style.width=pct+"%";
+document.getElementById("progressPct").textContent=pct+"%";
+if(label)document.getElementById("progressLabel").textContent=label;
+}
+function showResult(html){
+var s=document.getElementById("resultSection");s.classList.add("show");
+var b=new Blob([html],{type:"text/html;charset=utf-8"});
+document.getElementById("resultFrame").src=URL.createObjectURL(b);
+setTimeout(function(){document.getElementById("results").scrollIntoView({behavior:"smooth"})},400);
+}
+
+function startCollect(){
+var city=document.getElementById("cityInput").value.trim();
+var prov=document.getElementById("provInput").value.trim();
+if(!city||!prov){addLog("??? 请输入城市和省份","error");return}
+var btn=document.getElementById("collectBtn");btn.disabled=true;btn.textContent="采集中...";
+document.getElementById("progressSection").classList.add("show");
+document.getElementById("logBox").innerHTML="";
+["search","screen","dedup","gap","done"].forEach(function(s){setStage(s,"")});
+setProgress(0,"初始化...");addLog(prov+" "+city,"ok");
+
+var es=new EventSource("/api/collect?city="+encodeURIComponent(city)+"&province="+encodeURIComponent(prov));
+es.addEventListener("progress",function(e){
+var d=JSON.parse(e.data);addLog(d.msg,d.level||"");
+if(d.stage)setStage(d.stage,"active");
+if(d.stage_done)setStage(d.stage_done,"done");
+if(d.pct!=null)setProgress(d.pct,d.label||"");
+});
+es.addEventListener("dashboard",function(e){
+var d=JSON.parse(e.data);dashboardHTML=d.html;candidatesCSV=d.csv||"";
+showResult(dashboardHTML);addLog("完成 - "+d.n_candidates+" 条候选","ok");
+setProgress(100,"完成");setStage("done","done");es.close();
+btn.disabled=false;btn.textContent="开始采集";
+});
+es.onerror=function(){addLog("连接中断","error");btn.disabled=false;btn.textContent="重试";es.close()};
+}
+function downloadHTML(){if(dashboardHTML){var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([dashboardHTML],{type:"text/html"}));a.download="看板.html";a.click()}}
+function downloadCSV(){if(candidatesCSV){var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([candidatesCSV],{type:"text/csv"}));a.download="candidates.csv";a.click()}}
+function resetAll(){
+document.getElementById("progressSection").classList.remove("show");
+document.getElementById("resultSection").classList.remove("show");
+document.getElementById("collectBtn").disabled=false;document.getElementById("collectBtn").textContent="开始采集";
+dashboardHTML="";candidatesCSV="";document.getElementById("resultFrame").src="";
+}
+
+// Cached results
+fetch("/api/cached").then(function(r){return r.json()}).then(function(list){
+if(!list.length)return;
+document.getElementById("cachedSelect").classList.add("show");
+var h="";list.forEach(function(c){
+h+='<button class="btn-sm" data-file="'+c._file+'" onclick="loadCached(this)">'+c.province+' '+c.city+' <span style="color:#b0b0aa;font-size:.65rem">'+c.cached_at+'</span></button>';
+});
+document.getElementById("cachedBtns").innerHTML=h;
+});
+
+function loadCached(el){
+var filename=el.getAttribute("data-file");
+el.disabled=true;
+document.getElementById("progressSection").classList.add("show");
+document.getElementById("logBox").innerHTML="";
+addLog("加载缓存: "+filename,"ok");setProgress(10,"加载中...");
+fetch("/api/cached/"+filename).then(function(r){
+if(!r.ok)throw new Error("HTTP "+r.status);
+return r.json();
+}).then(function(d){
+dashboardHTML=d.html;candidatesCSV=d.csv||"";
+showResult(dashboardHTML);addLog("已加载 "+d.city+" ("+d.cached_at+")","ok");
+setProgress(100,"完成");
+}).catch(function(e){
+addLog("加载失败: "+e.message,"error");
+}).finally(function(){
+el.disabled=false;
+document.getElementById("progressSection").classList.remove("show");
+});
+}
+</script>
+</body>
+</html>

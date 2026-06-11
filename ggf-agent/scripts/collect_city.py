@@ -1,0 +1,217 @@
+# DEPRECATED — use ggf_agent package instead (from ggf_agent.xxx import ...)
+"""
+单城市多源采集 → V5预筛选 → 智能去重 → 保存候选列表。
+
+输出: agent/outputs/candidates/{省}_{市}_{日期}.csv
+  字段: source, title, url, snippet, kw_score, verdict, reason
+
+verdict 取值:
+  PASS       — 规则快判通过，关键词充足
+  LLM_PASS   — 边际文本经 LLM 判定为有实质内容
+  REJECT     — 规则快判拒绝 or LLM 拒绝 or 智能去重命中
+reason 取值:
+  RULE_PASS / RULE_REJECT / LLM_YES / LLM_NO / DUP_EXISTING
+"""
+from __future__ import annotations
+
+import re
+import time
+from datetime import datetime as dt
+from pathlib import Path
+
+import pandas as pd
+
+from config import MAIN_FLAT, CANDIDATES_DIR, SEARCH_DELAY, PROJECT_ROOT
+from search_sogou import search_sogou_weixin
+from search_bing import search_bing
+from pre_screen import prescreen
+
+
+def extract_policy_names(title: str) -> list[str]:
+    """从标题中提取《》内的政策名称。"""
+    return re.findall(r'《([^》]+)》', str(title))
+
+
+def dedup_by_policy_name(
+    candidates: list[dict],
+    existing_titles: set[str],
+) -> list[dict]:
+    """
+    智能去重：若候选标题中《》内的政策名称（≥4 字）在已有标题中
+    作为子串出现，标记为 REJECT / DUP_EXISTING。
+
+    典型场景：搜狗微信结果中的"发改委印发《政府出资产业投资基金
+    管理暂行办法》"与主 flat 中"国家发展改革委关于印发《政府出资
+    产业投资基金管理暂行办法》的通知"指向同一份国家级文件。
+    """
+    for r in candidates:
+        if r.get("verdict") == "REJECT":
+            continue
+        policy_names = extract_policy_names(r.get("title", ""))
+        for pn in policy_names:
+            if len(pn) < 4:       # 过短的政策名不判重（避免误匹配）
+                continue
+            for et in existing_titles:
+                if pn in str(et):
+                    r["verdict"] = "REJECT"
+                    r["reason"] = "DUP_EXISTING"
+                    break
+    return candidates
+
+
+def collect_city(province: str, city: str, use_llm: bool = True,
+                 max_queries: int = 3) -> pd.DataFrame:
+    """
+    单城市采集：多检索式搜索 → V5预筛选 → 智能去重 → 保存。
+
+    Args:
+        province: 省名
+        city: 城市名
+        use_llm: 是否对边际结果调 LLM 分类
+        max_queries: 最多几种检索式
+
+    Returns:
+        候选 DataFrame（含 verdict 列）
+    """
+    queries = [
+        f"{city} 引导基金 管理办法",
+        f"{city} 产业投资基金 暂行办法",
+        f"{city} 政府投资基金 管理",
+    ][:max_queries]
+
+    all_results: list[dict] = []
+    seen_titles: set[str] = set()
+
+    for qi, query in enumerate(queries):
+        # 搜狗微信
+        print(f"  [{qi+1}/{len(queries)}] 搜狗: {query}")
+        results = search_sogou_weixin(query)
+        for r in results:
+            key = r["title"].strip()
+            if key not in seen_titles:
+                seen_titles.add(key)
+                r["search_query"] = f"sogou:{query}"
+                all_results.append(r)
+        time.sleep(SEARCH_DELAY)
+
+        # Bing site:gov.cn（稳定政府 URL）
+        print(f"  [{qi+1}/{len(queries)}] Bing: {query} site:gov.cn")
+        bing_results = search_bing(query, count=10)
+        for r in bing_results:
+            key = r["title"].strip()
+            if key not in seen_titles:
+                seen_titles.add(key)
+                r["search_query"] = f"bing:{query}"
+                all_results.append(r)
+        time.sleep(SEARCH_DELAY)
+
+    if not all_results:
+        print("  → 无任何结果")
+        return pd.DataFrame()
+
+    # ── V5 预筛选 ──
+    print(f"  V5预筛选 {len(all_results)} 条...")
+    passed, llm_passed, rejected = [], [], []
+
+    for r in all_results:
+        verdict, kw_score, reason = prescreen(
+            r["title"], r.get("snippet", ""), city=city, use_llm=use_llm
+        )
+        r["kw_score"] = kw_score
+        r["verdict"] = verdict
+        r["reason"] = reason
+        r["province"] = province
+        r["city"] = city
+        r["date_collected"] = dt.now().strftime("%Y-%m-%d")
+
+        if verdict == "PASS":
+            passed.append(r)
+        elif verdict == "LLM_PASS":
+            llm_passed.append(r)
+        else:
+            rejected.append(r)
+
+    print(f"  PASS:{len(passed)} LLM_PASS:{len(llm_passed)} REJECT:{len(rejected)}")
+
+    # ── 合并 PASS + LLM_PASS ──
+    candidates = passed + llm_passed
+    if not candidates:
+        print("  → 无通过候选")
+        return pd.DataFrame()
+
+    # ── 加载已有标题（用于智能去重 + 精确排重）──
+    existing_urls: set[str] = set()
+    existing_titles: set[str] = set()
+
+    # 1) 主 flat
+    main_flat = pd.read_csv(MAIN_FLAT)
+    existing_urls.update(main_flat["url"].dropna().astype(str).str.strip())
+    existing_titles.update(main_flat["title"].dropna().astype(str).str.strip())
+
+    # 2) intake manifest
+    manifest_path = PROJECT_ROOT / "阶段1_权威数据与主库/03_待结构化增量采集_20260526/data/_manifest/intake_manifest.csv"
+    if manifest_path.exists():
+        mf = pd.read_csv(manifest_path)
+        if "title" in mf.columns:
+            existing_titles.update(mf["title"].dropna().astype(str).str.strip())
+
+    # ── 智能去重：《》内政策名称 vs 已有标题 ──
+    candidates = dedup_by_policy_name(candidates, existing_titles)
+    dup_count = sum(1 for c in candidates if c.get("reason") == "DUP_EXISTING")
+    if dup_count:
+        print(f"  智能去重: {dup_count} 条标记为 DUP_EXISTING")
+
+    df = pd.DataFrame(candidates)
+
+    # 3) data/ 中已存在的 .md 文件名
+    data_dir = PROJECT_ROOT / "阶段1_权威数据与主库/03_待结构化增量采集_20260526/data"
+    for f in data_dir.rglob("*.md"):
+        if "_manifest" not in str(f):
+            existing_titles.add(f.stem.strip())
+
+    mask_url = ~df["url"].astype(str).str.strip().isin(existing_urls)
+    mask_title = ~df["title"].astype(str).str.strip().isin(existing_titles)
+    df = df[mask_url & mask_title]
+
+    # ── 保存 ──
+    CANDIDATES_DIR.mkdir(parents=True, exist_ok=True)
+    clean_city = city.replace("/", "_").replace("\\", "_")
+    outpath = CANDIDATES_DIR / f"{province}_{clean_city}_{dt.now().strftime('%Y%m%d')}.csv"
+
+    cols = [
+        "province", "city", "source", "title", "url", "pkulaw_link", "snippet",
+        "search_query", "kw_score", "verdict", "reason", "date_collected",
+    ]
+    df[cols].to_csv(outpath, index=False, encoding="utf-8-sig")
+    print(f"  → 保存 {len(df)} 条: {outpath.name}")
+
+    # ── 生成北大法宝检索链接（稳定政府法规来源）──
+    from urllib.parse import quote as url_quote
+    pkulaw_base = "https://www.pkulaw.com/law?way=title&keyword="
+    df["pkulaw_link"] = df["title"].apply(
+        lambda t: pkulaw_base + url_quote(str(t)[:80])
+    )
+
+    n_bing = len(df[df["source"] == "bing"])
+    n_sogou = len(df[df["source"] == "sogou_weixin"])
+    print(f"    Bing(gov.cn稳定): {n_bing} 条 | 搜狗微信(浏览器可用): {n_sogou} 条")
+
+    return df
+
+
+if __name__ == "__main__":
+    import sys
+    city = sys.argv[1] if len(sys.argv) > 1 else "乌鲁木齐市"
+    province = sys.argv[2] if len(sys.argv) > 2 else "新疆维吾尔自治区"
+    use_llm = "--no-llm" not in sys.argv
+
+    print(f"采集: {province} {city}")
+    df = collect_city(province, city, use_llm=use_llm)
+
+    if len(df):
+        print(f"\n===== 结果预览 =====\n")
+        for i, (_, r) in enumerate(df.iterrows()):
+            print(f"{i+1}. [{r['verdict']}] {r['title']}")
+            print(f"   URL: {r['url'][:120]}")
+            print(f"   摘要: {str(r['snippet'])[:150]}")
+            print()
