@@ -2,7 +2,7 @@
 
 <h1>ggf-agent</h1>
 
-<b>政府引导基金 · 制度文本缺口诊断与多源采集</b><br/>
+<b>Government Guidance Fund · 制度文本缺口诊断与多源采集</b><br/>
 硕士课题用 · 替代人工逐市检索制度文本的体力活
 
 <br/>
@@ -13,6 +13,13 @@
 <img src="https://img.shields.io/badge/License-MIT-181717?style=flat-square" alt="MIT" />
 
 <br/><br/>
+
+<pre>
+ /\_/\
+( =^･ω･^=)
+ | 检索 |
+  \___/
+</pre>
 
 <a href="https://github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko">← 戆北在coding の猫窝</a>
 
