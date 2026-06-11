@@ -31,26 +31,10 @@ ACM ICAIF 2025 FinDDR 赛事存档 · **Test Set Rank #12**（队名 DeepSeek Yo
 
 **不在本仓**: 原始年报（版权+体积）、API Key、队内私信、参赛证明
 
-### 3. policyscout（采集 Agent — 最新）
-政府引导基金制度文本缺口诊断与多源采集工具（硕士课题用）。
+### 3. PolicyScout（采集 Agent — 最新）
+政府引导基金制度文本缺口诊断与多源采集工具（课题用）。
 **状态**: 活跃开发中 · 首个正经 Python package
-**关键路径**:
-- `policyscout/policyscout/server.py` — Web 服务入口（`python -m policyscout.server`）
-- `policyscout/policyscout/collect.py` — 采集编排器
-- `policyscout/policyscout/gap.py` — 单城市制度文本缺口诊断
-- `policyscout/policyscout/dashboard.py` — HTML 看板生成引擎
-- `policyscout/policyscout/prescreen.py` — 规则 + LLM 两级预筛选
-- `policyscout/policyscout/config.py` — 全局配置（含数据路径、API 设置、省份列表）
-- `policyscout/scripts/` — 已弃用的独立脚本（仅供参考，建议用 policyscout package）
-
-**功能**:
-1. 搜狗微信搜索 → V5 预筛选（规则快判 + DeepSeek LLM 二分类）
-2. 与已有数据库 + intake 目录智能去重
-3. 单城市制度文本缺口诊断（市/区/省三级覆盖 + 年份断层检测 + 热力图 + 时间线）
-4. 自包含 HTML 交互看板（4 选项卡，双击即用）
-5. 本地 Web 界面（127.0.0.1:8765 + SSE 进度推送）
-
-**依赖**: Python 3.10+ · pandas · requests · beautifulsoup4 · openai · 需要主数据库 CSV（`main_flat`）
+**独立仓库**: [policyscout](https://github.com/Willow-Tokoton-Hitorineko/policyscout) — 不在本仓内
 
 ## 本地研发环境
 
