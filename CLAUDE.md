@@ -32,7 +32,7 @@ ACM ICAIF 2025 FinDDR 赛事存档 · **Test Set Rank #12**（队名 DeepSeek Yo
 **不在本仓**: 原始年报（版权+体积）、API Key、队内私信、参赛证明
 
 ### 3. ggf-agent（采集 Agent — 最新）
-GGF-TWI 政府引导基金制度文本缺口诊断与多源采集工具（硕士课题用）。
+政府引导基金制度文本缺口诊断与多源采集工具（硕士课题用）。
 **状态**: 活跃开发中 · 首个正经 Python package
 **关键路径**:
 - `ggf-agent/ggf_agent/server.py` — Web 服务入口（`python -m ggf_agent.server`）

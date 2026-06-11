@@ -1,5 +1,5 @@
 """
-ggf_agent — GGF-TWI 政府引导基金政策文本采集 Agent
+ggf_agent — 政府引导基金政策文本采集 Agent
 
 全国制度文本缺口诊断 + 多源采集 + 交互 HTML 看板。
 

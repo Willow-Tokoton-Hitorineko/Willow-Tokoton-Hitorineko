@@ -142,7 +142,7 @@ def build_gap_tables(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
             for name, tmpl in SEARCH_TEMPLATES.items():
                 queries.append(tmpl.replace("{city}", city))
 
-            # GGF-TWI 入选状态
+            # 入选状态
             in_ggf_twi = n_i >= GGF_TWI_MIN_INST
 
             city_rows.append({

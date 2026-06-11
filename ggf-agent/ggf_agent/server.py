@@ -228,7 +228,7 @@ def start_server(host: str = HOST, port: int = PORT):
     server = ThreadingHTTPServer((host, port), AgentHandler)
 
     url = f"http://{host}:{port}"
-    print(f"\n  GGF-TWI Agent: {url}")
+    print(f"\n  ggf-agent: {url}")
     print(f"  按 Ctrl+C 停止。\n")
     try:
         server.serve_forever()
