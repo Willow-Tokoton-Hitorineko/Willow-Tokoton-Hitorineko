@@ -5,6 +5,7 @@
 # 独立仓库（各有 .git），不要嵌进猫窝仓
 debut-wechat-article-crawler/
 finddr-fincmini-pipeline/
+policyscout/
 
 # 系统与编辑器
 .DS_Store
