@@ -5,8 +5,8 @@ import os
 from pathlib import Path
 
 # ── 包根 ──
-PKG_ROOT = Path(__file__).resolve().parents[1]    # agent/
-PROJECT_ROOT = PKG_ROOT.parent                     # PMI指数/
+PKG_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = PKG_ROOT.parent
 
 # ── 输出 ──
 OUTPUTS_DIR = PKG_ROOT / "outputs"
@@ -15,8 +15,8 @@ GAP_DIR = OUTPUTS_DIR / "gap"
 DASHBOARDS_DIR = OUTPUTS_DIR / "dashboards"
 DEDUP_DIR = OUTPUTS_DIR / "dedup"
 
-# ── 主数据 ──
-MAIN_FLAT = PROJECT_ROOT / "阶段3_指数构建与验证/09_数据质量诊断_20260515/outputs/main8_flat_v6_20260605.csv"
+# ── 主数据（可通过环境变量覆盖）──
+MAIN_FLAT = Path(os.environ.get("MAIN_FLAT_PATH", PKG_ROOT / "data" / "main_flat.csv"))
 
 # ── API（优先环境变量，回退默认值）──
 DS_API_KEY = os.environ.get("DS_API_KEY", "")
@@ -31,8 +31,8 @@ BATCH_DELAY = 3.0
 ENABLE_BING = False         # Bing gov.cn 命中率极低，默认关闭
 ENABLE_PKULAW = False       # 北大法宝需付费登录，默认关闭（可配置 PKULAW_USER/PKULAW_PASS 开启）
 
-# ── 本地数据路径 ──
-INTAKE_DATA_DIR = PROJECT_ROOT / "阶段1_权威数据与主库/03_待结构化增量采集_20260526/data"
+# ── 本地数据路径（可通过环境变量 INTAKE_DIR 覆盖）──
+INTAKE_DATA_DIR = Path(os.environ.get("INTAKE_DIR", PKG_ROOT / "data" / "intake"))
 
 # ── 制度文种（14 类，与 V5 + phase1 一致）──
 INST_TYPES = [

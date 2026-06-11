@@ -21,7 +21,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import MAIN_FLAT, CANDIDATES_DIR, SEARCH_DELAY, PROJECT_ROOT
+from config import MAIN_FLAT, CANDIDATES_DIR, SEARCH_DELAY, PROJECT_ROOT, AGENT_ROOT
 from search_sogou import search_sogou_weixin
 from search_bing import search_bing
 from pre_screen import prescreen
@@ -149,7 +149,7 @@ def collect_city(province: str, city: str, use_llm: bool = True,
     existing_titles.update(main_flat["title"].dropna().astype(str).str.strip())
 
     # 2) intake manifest
-    manifest_path = PROJECT_ROOT / "阶段1_权威数据与主库/03_待结构化增量采集_20260526/data/_manifest/intake_manifest.csv"
+    manifest_path = AGENT_ROOT / "data" / "_manifest" / "intake_manifest.csv"
     if manifest_path.exists():
         mf = pd.read_csv(manifest_path)
         if "title" in mf.columns:
@@ -164,7 +164,7 @@ def collect_city(province: str, city: str, use_llm: bool = True,
     df = pd.DataFrame(candidates)
 
     # 3) data/ 中已存在的 .md 文件名
-    data_dir = PROJECT_ROOT / "阶段1_权威数据与主库/03_待结构化增量采集_20260526/data"
+    data_dir = AGENT_ROOT / "data"
     for f in data_dir.rglob("*.md"):
         if "_manifest" not in str(f):
             existing_titles.add(f.stem.strip())

@@ -17,15 +17,15 @@ import os
 from pathlib import Path
 
 # ── 路径 ──
-AGENT_ROOT = Path(__file__).resolve().parents[1]        # agent/
-PROJECT_ROOT = AGENT_ROOT.parent                         # PMI指数/
+AGENT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = AGENT_ROOT.parent
 SCRIPTS_DIR = AGENT_ROOT / "scripts"
 OUTPUTS_DIR = AGENT_ROOT / "outputs"
 CANDIDATES_DIR = OUTPUTS_DIR / "candidates"
 GAP_DIR = OUTPUTS_DIR / "gap"
 DEDUP_DIR = OUTPUTS_DIR / "dedup"
 DATA_DIR = AGENT_ROOT / "data" / "pending"
-MAIN_FLAT = PROJECT_ROOT / "00_当前主数据" / "01_文本级主表" / "CURRENT_main_flat.csv"
+MAIN_FLAT = Path(os.environ.get("MAIN_FLAT_PATH", AGENT_ROOT / "data" / "main_flat.csv"))
 
 # ── API（优先环境变量）──
 DS_API_KEY = os.environ.get("DS_API_KEY", "")
