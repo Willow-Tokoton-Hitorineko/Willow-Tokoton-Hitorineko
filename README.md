@@ -14,7 +14,7 @@
 
 <br/>
 
-[![Profile views](https://hits.sh/github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko.svg?label=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&labelColor=F97316&color=181717)](https://github.com/Willow-Tokoton-Hitorineko)
+![🐾 迎客猫](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE+%E8%BF%8E%E5%AE%A2%E7%8C%AB&color=F97316&style=flat-square)
 
 </div>
 
