@@ -14,7 +14,7 @@
 
 <br/>
 
-[![Profile views](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&color=F97316&style=flat-square)](https://github.com/Willow-Tokoton-Hitorineko)
+[![Profile views](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20nya&color=F97316&style=flat-square)](https://github.com/Willow-Tokoton-Hitorineko)
 
 </div>
 
