@@ -14,7 +14,7 @@
 
 <br/>
 
-![visitors](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20%E7%8C%AB%E7%AA%9D&color=F97316)
+![visitors](https://img.shields.io/badge/dynamic/json?url=https://hits.dwyl.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko.json&query=%24.count&label=%F0%9F%90%BE&labelColor=181717&color=F97316&style=flat-square)
 
 </div>
 
