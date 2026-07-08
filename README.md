@@ -14,7 +14,7 @@
 
 <br/>
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Willow-Tokoton-Hitorineko.Willow-Tokoton-Hitorineko&left_text=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&left_color=F97316&right_color=555555)
+![visitors](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE%20%E7%8C%AB%E7%AA%9D&color=F97316)
 
 </div>
 
