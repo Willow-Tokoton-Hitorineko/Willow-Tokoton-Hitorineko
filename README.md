@@ -14,7 +14,7 @@
 
 <br/>
 
-![🐾 迎客猫](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE+%E8%BF%8E%E5%AE%A2%E7%8C%AB&color=F97316&style=flat-square)
+![🐾 迎客猫](https://komarev.com/ghpvc/?username=Willow-Tokoton-Hitorineko&label=%F0%9F%90%BE&color=F97316&style=flat-square)
 
 </div>
 
