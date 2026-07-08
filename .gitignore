@@ -1,6 +1,7 @@
 # 本地 IDE / 技能文件，不要进 Profile 仓库
 .cursor/
 .claude/
+CLAUDE.md
 
 # 独立仓库（各有 .git），不要嵌进猫窝仓
 debut-wechat-article-crawler/
