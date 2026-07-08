@@ -14,7 +14,7 @@
 
 <br/>
 
-![🐾 迎客猫](https://visitor-badge.laobi.icu/badge?page_id=Willow-Tokoton-Hitorineko.Willow-Tokoton-Hitorineko&left_text=%F0%9F%90%BE&left_color=f97316&right_color=555555)
+![🐾 迎客猫](https://visitor-badge.laobi.icu/badge?page_id=Willow-Tokoton-Hitorineko.Willow-Tokoton-Hitorineko&left_text=%F0%9F%90%BE&left_color=%23f97316&right_color=%23555555)
 
 </div>
 
