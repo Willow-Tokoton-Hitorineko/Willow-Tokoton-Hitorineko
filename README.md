@@ -14,7 +14,7 @@
 
 <br/>
 
-[![Profile views](https://hits.sh/github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko.svg?label=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&labelColor=F97316&color=181717)](https://github.com/Willow-Tokoton-Hitorineko)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=Willow-Tokoton-Hitorineko.Willow-Tokoton-Hitorineko&left_text=%F0%9F%90%BE%20%E8%BF%8E%E5%AE%A2%E7%8C%AB&left_color=F97316&right_color=181717)
 
 </div>
 
