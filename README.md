@@ -4,7 +4,7 @@
 
 **nya / nya** · 艾莉丝党 · 在代码与金融之间练爪
 
-[作品集网站](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
+[可搜索作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
 
 </div>
 
@@ -16,9 +16,9 @@
 
 ## 🧭 第一次来 · 选一条阅读路线
 
-- **看 AI 产品与规则工程**：[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass) → [FinDDR](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)，关注问题拆解、证据引用与质量门禁。
-- **看金融研究与数据方法**：[稳定币研究](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research) → [风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)，关注样本资格、时间对齐与结果边界。
-- **看工具交付与人工复核**：[票据工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench) → [ZIP 工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)，关注运行步骤、异常处理和安全导出。
+- **[看 AI 产品与规则工程](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=product#projects)**：[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass) → [FinDDR](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)，关注问题拆解、证据引用与质量门禁。
+- **[看金融研究与数据方法](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=research#projects)**：[稳定币研究](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research) → [风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)，关注样本资格、时间对齐与结果边界。
+- **[看工具交付与人工复核](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=tools#projects)**：[票据工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench) → [ZIP 工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)，关注运行步骤、异常处理和安全导出。
 
 ## 📦 猫箱 · 从这里看作品
 
