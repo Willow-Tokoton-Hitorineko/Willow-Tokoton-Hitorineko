@@ -1,319 +1,82 @@
-<!-- portfolio-entry:start -->
-## 金融研究 × 数据分析 × AI 工作流
-
-[浏览作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF 摘要](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
-
-围绕金融研究问题整理数据口径、规则与模型协作、验证和交付。保留既有作品与研究历史，新演示使用合成数据并明确实现边界。
-
-近期作品：
-
-- [大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)：已有 A 股市场研究工作台，证据校验与模型解释分层。
-- [稳定币研究方法](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research)：企业业务证据、融资关系校验与分币种汇总。
-- [票据复核工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench)：规则校验、人工确认、本机网页与 CSV 导出。
-- [月频风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)：基准相对倾斜、风险约束与时点对齐。
-- [ZIP 兼容工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)：UTF-8 文件名修复与逐文件 SHA-256 验证。
-
-后四项为独立公开实现，不是公司或团队受限系统的源码副本，不把合成测试结果表述成真实业务效果。代码由 AI 编程工具辅助完成；本人责任和局限以各仓库说明为准。
-<!-- portfolio-entry:end -->
-
 <div align="center">
 
-<!-- 顶部三句轮播；; 分隔 -->
-<img src="https://readme-typing-svg.demolab.com?font=Zen+Maru+Gothic&weight=500&size=22&duration=2800&pause=900&color=F97316&center=true&vCenter=true&width=760&lines=%E6%88%91%E4%B8%8D%E6%98%AF%E8%A6%81%E4%B9%90%E5%A5%88;%E6%83%B3%E6%B3%95%E5%A4%9A%E4%BD%86%E5%A4%A9%E6%AE%8B%E6%89%8B%20%C2%B7%20%E6%84%9F%E8%B0%A2%E7%AE%97%E6%B3%95%E4%BD%AC%E5%BC%80%E6%BA%90;%E9%87%8D%E5%A4%8D%EF%BC%8C%E6%88%91%E4%B8%8D%E6%98%AF%E8%A6%81%E4%B9%90%E5%A5%88" alt="顶部轮播" />
+![Willow 的猫窝与金融研究作品](./assets/profile-header.svg)
 
-<br/>
+**nya / nya** · 艾莉丝党 · 在代码与金融之间练爪
 
-<h1 align="center">
-  戆北在coding<br/>
-  Speaking
-</h1>
-
-**nya/nya** · ひきこもり大学 · シャリア
-
-<br/>
-
-![🐾 迎客猫](https://visitor-badge.laobi.icu/badge?page_id=Willow-Tokoton-Hitorineko.Willow-Tokoton-Hitorineko&left_text=%F0%9F%90%BE&left_color=%23f97316&right_color=%23555555)
+[作品集网站](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
 
 </div>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
 
 ## 🐾 ようこそ · 欢迎来到猫窝
 
-<div align="center">
+我是 Willow，也叫戆北在 coding。这里收录金融研究、数据分析和 AI 工作流作品：先把问题和口径讲清，再让代码、模型与人工复核各司其职。
 
-这页是猫窝，也是作品导航；项目细节见各仓库 README。
+代码实现有 AI 编程工具参与；本人贡献、验证范围和局限以各仓库说明为准。新发布的方法演示使用合成数据，原始公司系统、业务记录和商业数据库不在公开范围。
 
-<br/>
+## 📦 猫箱 · 从这里看作品
 
-金融研究与数据作品 · AI 辅助实现 · 持续学习与验证
+### 已有公开作品
 
-<br/>
+- **[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)**：A 股市场研究工作台，研究计划、取数校验和证据引用分层；不是涨跌预测或买卖建议。
+- **[FinDDR · 财小析](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)**：跨地区年报规则库与质量门禁归档；团队 Test Set Rank #12，个人贡献在仓库中单独说明。
+- **[PolicyScout](https://github.com/Willow-Tokoton-Hitorineko/policyscout)**：政府引导基金政策候选检索、筛选与去重原型，正式核验仍由研究者完成。
+- **[FF5 多因子研究](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy)**：课程研究归档，保留历史口径与局限；不与新风险预算演示混用结果。
+- **[政策文章采集工具](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler)**：早期采集与处理探索，保留为学习记录。
 
-<p><em>真の艾莉丝党——娶不到艾莉丝，就不死了</em></p>
+### 独立公开方法演示
 
-</div>
+- **[稳定币研究方法](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research)**：企业业务证据、融资关系完整性与分币种汇总；只有合成企业和交易记录。
+- **[票据复核工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench)**：规则校验、人工确认、本机网页与安全 CSV 导出；不含原公司代码、OCR 或内部模板。
+- **[月频风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)**：基准相对倾斜、跟踪误差约束、t+2 收益与漂移成本；合成实验不代表真实收益。
+- **[ZIP 中文兼容工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)**：UTF-8 文件名修复、macOS 元数据清理和 SHA-256 验证，拒绝覆盖已有输出。
 
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
+各仓库保存具体运行命令和验证记录；[作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/)提供适合快速浏览的摘要。
 
-## 🐱 猫のプロフィール
+## 🔧 猫のツール箱
 
-<table width="100%">
-<tr>
-<td width="68%" valign="top">
+![公开作品使用的工具与方法](./assets/toolbox.svg)
 
-<h3>🪪 身元</h3>
+- **金融研究**：样本资格、字段与时点、风险归因、描述与识别边界。
+- **数据与流程**：关系校验、缺失处理、确定性计算、人工确认与导出护栏。
+- **工程交付**：离线演示、异常测试、文档与命令核对、脱敏发布。
 
-<table>
-<tr><td width="72"><b>称呼</b></td><td>戆北在coding、Willow、猫猫、小蔡</td></tr>
-<tr><td><b>学历</b></td><td>硕升专在读</td></tr>
-<tr><td><b>开盒</b></td><td>户口本不在沪，在长宁区散养</td></tr>
-</table>
+## 📊 验证记录 · 有证据才记战绩
 
-<h3>🎭 人设 · 所属</h3>
+截至 **2026-10-14**，四个独立方法演示合计 **33 项离线测试通过**，Windows / Linux CI 均通过。它们验证公开演示的行为，不代表原实习系统的准确率或研究的真实收益。
 
-<table>
-<tr><td width="72"><b>人设</b></td><td>想学代码（魔法）的艾莉丝·伯雷亚斯·格雷拉特，擅长爆别人金币（剑法）desu</td></tr>
-<tr><td><b>所属</b></td><td>ひきこもり大学 · シャリア</td></tr>
-<tr><td><b>风格</b></td><td>野猫（不听话 desu，但希望你教我魔法 onegai（棒読），擅长弄乱架构）</td></tr>
-</table>
+[稳定币 CI](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research/actions/workflows/verify.yml) · [票据 CI](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench/actions/workflows/verify.yml) · [风险预算 CI](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research/actions/workflows/verify.yml) · [ZIP CI](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool/actions/workflows/verify.yml)
 
-<h3>🍡 味の好み</h3>
-
-<table>
-<tr><td width="72"><b>喜欢</b></td><td>抹茶、水里游、年糕、红豆、肉</td></tr>
-<tr><td><b>讨厌</b></td><td>黄瓜、豌豆</td></tr>
-<tr><td><b>无力</b></td><td>過甘之物，難以下嚥</td></tr>
-</table>
-
-<p><sub>🔧 工具栈见下方 <strong>猫のツール箱</strong></sub></p>
-
-</td>
-<td width="32%" valign="top" align="center">
-
-<br/>
-
-<pre>
- /\_/\  
-( ´･ω･)
-| にゃ |
- \___/ 
-</pre>
-
-<p>
-<img src="https://img.shields.io/badge/エリス党-F97316?style=flat-square" alt="エリス党（艾莉丝党）" /><br/>
-<img src="https://img.shields.io/badge/野猫-181717?style=flat-square" alt="野猫" /><br/>
-<img src="https://img.shields.io/badge/vibe_coding-FB7185?style=flat-square" alt="vibe coding" />
-</p>
-
-<p>
-🍵 抹茶<br/>
-🐟 水里游<br/>
-🍡 年糕红豆<br/>
-<br/>
-🚫 黄瓜豌豆<br/>
-🍰 <em>過甘之物</em>
-</p>
-
-<br/>
-
-<pre>
-   🍈 ✗
-  /\_/\
- (×﹏×)
-  | NG |
- 哈密瓜
- 食べられない
-</pre>
-<p><sub>🐱 猫猫吃不了哈密瓜</sub></p>
-
-</td>
-</tr>
-</table>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
-
-## 📜 コーディング守则
-
-<div align="center">
-
-| | |
-|:--|:--|
-| **测试代码** | 保留验证用例，记录实际通过范围 |
-| **核心逻辑** | 先说明口径，再跑通与检查边界 |
-| **README** | AI 辅助起草，命令与主张需要核对 |
-
-</div>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
-
-## 🐟 いま捕まえてる魚
-
-<table width="100%">
-<tr>
-<td width="68%" valign="top">
-
-<table>
-<tr>
-<td width="88" valign="top"><b>🔧 练爪中</b></td>
-<td>
-<b>剑术</b> · 政府引导基金·圣金蔷薇突刺流<br/>
-<b>魔法</b> · 蟒語術·循环脚本咏唱（Python 初修魔法）<br/>
-<b>魔法</b> · 言灵刻印·稿本转声闻術（文转音·TTS 魔法）<br/>
-<b>魔法</b> · 歌姬具现·ACE 翻唱召唤術（AI 翻唱魔法）
-</td>
-</tr>
-<tr><td><b>🏠 已开源</b></td><td>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline">finddr-fincmini-pipeline</a>（FinDDR · 财小析规则库 · Test Set Rank #12）<br/>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler">debut-wechat-article-crawler</a>（微信公众号爬虫）<br/>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/policyscout">policyscout</a>（PolicyScout · 引导基金制度文本缺口诊断与多源采集 Agent）<br/>
-<a href="https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy">ff5-ashare-strategy</a>（FF5多因子A股策略研究）
-</td></tr>
-</table>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="bottom">
-
-<pre>
-      ⚔
-     ╱│╲
-  /\_/\ ╲
- ( ´ω`)─ 圣金斩
- / │ ╲
-|__|__|
-  にゃ
-</pre>
-<sub>🐱 练剑</sub>
-
-</td>
-<td width="50%" valign="bottom">
-
-<pre>
- ✦ ★ ✦
-  /\_/\
- ( *ω*) 蟒語
-  |≋≋≋|
- / ╲★╱ \
-言灵 ACE
-  にゃ
-</pre>
-<sub>🔮 练魔法</sub>
-
-</td>
-</tr>
-</table>
-
-<p align="center"><sub>剑術と魔法 · 両方修行中</sub></p>
-
-</td>
-<td width="32%" valign="middle" align="center">
-
-<p><b>🐟 异世界修练面板</b></p>
-
-<pre>
-圣金斩 ████░░░░
-蟒語術 ██░░░░░░
-言灵   █░░░░░░░
-歌姬   █░░░░░░░
-</pre>
-
-<p><sub>猫箱 +1 · FINDDR 规则库已开源</sub></p>
-
-<img src="https://img.shields.io/badge/剑术-圣金蔷薇突刺流-F97316?style=flat-square" alt="剑术" /><br/>
-<img src="https://img.shields.io/badge/魔法-蟒語脚本術-3776AB?style=flat-square" alt="Python" /><br/>
-<img src="https://img.shields.io/badge/魔法-稿本転声術-60A5FA?style=flat-square" alt="TTS" /><br/>
-<img src="https://img.shields.io/badge/魔法-ACE翻唱召唤-FB7185?style=flat-square" alt="ACE Studio" />
-
-</td>
-</tr>
-</table>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
-
-## 🐾 猫のツール箱
-
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,py,html,css,js,mysql&perline=6" alt="Git Python HTML CSS JS SQL" />
-</a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/Stata-1A5F8C?style=for-the-badge" alt="Stata" />
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-<img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
-<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-
-</div>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
-
-## 📦 猫箱 · 精选仓库
-
-| 项目 | 说明 |
-|:-----|:-----|
-| [finddr-fincmini-pipeline](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline) | ACM ICAIF 2025 FinDDR · 财小析（FinCMini Agent）规则库 · Test Set Rank #12 |
-| [debut-wechat-article-crawler](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler) | 微信公众号爬虫 + 政策数据处理 |
-| [policyscout](https://github.com/Willow-Tokoton-Hitorineko/policyscout) | PolicyScout · 引导基金制度文本缺口诊断与多源采集 Agent |
-| [ff5-ashare-strategy](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy) | FF5多因子A股策略研究 · 课程期末项目 |
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
-
-## 📊 猫の戦績
-
-<div align="center">
-
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Willow-Tokoton-Hitorineko&theme=transparent&hide_border=true&background=00000000&ring=F97316&fire=FB7185&currStreakLabel=F97316&sideLabels=6B7280&dates=6B7280" alt="Streak stats" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Willow-Tokoton-Hitorineko&theme=minimal&hide_border=true&area=true&color=F97316&line=FB7185&point=F97316&bg_color=ffffff00" alt="Activity graph" />
-
-</div>
-
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
+大势罗盘的 46 项测试记录见其仓库。日常贡献可直接查看本页下方的 GitHub 原生贡献图；这里不再依赖外部活动统计服务。
 
 ## 🐱 猫在追鱼干
 
-<p align="center"><sub>🐱 追鱼干にゃ · 沿贡献格巡游</sub></p>
-
-<div align="center">
-
-<pre>
-   🐟 ～～ 🐟 ～～ 🐟
-     ↑  🐱 にゃ  ↑
-  （沿贡献格巡游）
-</pre>
+<p align="center"><sub>沿贡献格巡游 · GitHub Actions 每日生成；访问本页不会调用模型或金融接口。</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./output/github-contribution-grid-snake.svg" />
-  <img src="./output/github-contribution-grid-snake.svg" alt="猫在追鱼干 · 贡献热力图动效" width="100%" />
+  <img src="./output/github-contribution-grid-snake.svg" alt="贡献格巡游动画" width="100%" />
 </picture>
 
-</div>
+[查看生成记录](https://github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko/actions/workflows/snake.yml)
 
-<p align="center">🐾 ─────────── 🐱 ─────────── 🐾</p>
+<details>
+<summary>🐾 猫窝小档案 · 点开有猫</summary>
 
-## 💌 おやつ · 联系
+称呼：Willow、猫猫、小蔡。喜欢抹茶、水里游、年糕和红豆；黄瓜、豌豆、哈密瓜暂时不接待。
 
-<p align="center">欢迎来猫窝串门、围观练爪进度</p>
+想学代码（魔法）的野猫，还在练爪。艾莉丝党，ひきこもり大学 · シャリア——这里是个人兴趣表达，不是正式教育或职业资历。
 
-<div align="center">
+```text
+ /\_/\
+( ´･ω･)
+ | にゃ |
+  \___/
+```
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Willow-Tokoton-Hitorineko)
+</details>
 
-<br/><br/>
+---
 
-*Thanks for visiting · また遊びに来てにゃ 🐾*
-
-</div>
+欢迎来猫窝串门、围观练爪进度。**Thanks for visiting · また遊びに来てにゃ**
