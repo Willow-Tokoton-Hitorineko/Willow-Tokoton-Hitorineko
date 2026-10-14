@@ -1,3 +1,21 @@
+<!-- portfolio-entry:start -->
+## 金融研究 × 数据分析 × AI 工作流
+
+[浏览作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF 摘要](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
+
+围绕金融研究问题整理数据口径、规则与模型协作、验证和交付。保留既有作品与研究历史，新演示使用合成数据并明确实现边界。
+
+近期作品：
+
+- [大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)：已有 A 股市场研究工作台，证据校验与模型解释分层。
+- [稳定币研究方法](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research)：企业业务证据、融资关系校验与分币种汇总。
+- [票据复核工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench)：规则校验、人工确认、本机网页与 CSV 导出。
+- [月频风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)：基准相对倾斜、风险约束与时点对齐。
+- [ZIP 兼容工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)：UTF-8 文件名修复与逐文件 SHA-256 验证。
+
+后四项为独立公开实现，不是公司或团队受限系统的源码副本，不把合成测试结果表述成真实业务效果。代码由 AI 编程工具辅助完成；本人责任和局限以各仓库说明为准。
+<!-- portfolio-entry:end -->
+
 <div align="center">
 
 <!-- 顶部三句轮播；; 分隔 -->
@@ -24,11 +42,11 @@
 
 <div align="center">
 
-不想写 README ……**但这页是猫窝，装修说明书，例外にゃ**
+这页是猫窝，也是作品导航；项目细节见各仓库 README。
 
 <br/>
 
-GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
+金融研究与数据作品 · AI 辅助实现 · 持续学习与验证
 
 <br/>
 
@@ -121,9 +139,9 @@ GitHub 想到什么就放上来 · vibe coding · 我是外行的乡毋宁
 
 | | |
 |:--|:--|
-| **测试代码** | 测测你的，好像被我删了にゃ |
-| **核心逻辑** | 先跑通，之后吃什么？ |
-| **README** | AI 写完能不看嘛？ |
+| **测试代码** | 保留验证用例，记录实际通过范围 |
+| **核心逻辑** | 先说明口径，再跑通与检查边界 |
+| **README** | AI 辅助起草，命令与主张需要核对 |
 
 </div>
 
