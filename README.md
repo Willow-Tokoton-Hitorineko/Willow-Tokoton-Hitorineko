@@ -14,6 +14,12 @@
 
 代码实现有 AI 编程工具参与；本人贡献、验证范围和局限以各仓库说明为准。新发布的方法演示使用合成数据，原始公司系统、业务记录和商业数据库不在公开范围。
 
+## 🧭 第一次来 · 选一条阅读路线
+
+- **看 AI 产品与规则工程**：[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass) → [FinDDR](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)，关注问题拆解、证据引用与质量门禁。
+- **看金融研究与数据方法**：[稳定币研究](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research) → [风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)，关注样本资格、时间对齐与结果边界。
+- **看工具交付与人工复核**：[票据工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench) → [ZIP 工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)，关注运行步骤、异常处理和安全导出。
+
 ## 📦 猫箱 · 从这里看作品
 
 ### 已有公开作品
@@ -21,7 +27,7 @@
 - **[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)**：A 股市场研究工作台，研究计划、取数校验和证据引用分层；不是涨跌预测或买卖建议。
 - **[FinDDR · 财小析](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)**：跨地区年报规则库与质量门禁归档；团队 Test Set Rank #12，个人贡献在仓库中单独说明。
 - **[PolicyScout](https://github.com/Willow-Tokoton-Hitorineko/policyscout)**：政府引导基金政策候选检索、筛选与去重原型，正式核验仍由研究者完成。
-- **[FF5 多因子研究](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy)**：课程研究归档，保留历史口径与局限；不与新风险预算演示混用结果。
+- **[FF5 多因子研究](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy)**：课程研究归档；已发现同期间信息偏差，历史收益待重算；不与新风险预算演示混用结果。
 - **[政策文章采集工具](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler)**：早期采集与处理探索，保留为学习记录。
 
 ### 独立公开方法演示
@@ -43,7 +49,7 @@
 
 ## 📊 验证记录 · 有证据才记战绩
 
-截至 **2026-10-14**，四个独立方法演示合计 **33 项离线测试通过**，Windows / Linux CI 均通过。它们验证公开演示的行为，不代表原实习系统的准确率或研究的真实收益。
+截至 **2026-10-14**，四个独立方法演示合计 **36 项离线测试通过**，Windows / Linux CI 均通过。它们验证公开演示的行为，不代表原实习系统的准确率或研究的真实收益。
 
 [稳定币 CI](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research/actions/workflows/verify.yml) · [票据 CI](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench/actions/workflows/verify.yml) · [风险预算 CI](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research/actions/workflows/verify.yml) · [ZIP CI](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool/actions/workflows/verify.yml)
 
