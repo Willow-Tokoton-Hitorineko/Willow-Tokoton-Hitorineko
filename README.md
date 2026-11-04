@@ -4,76 +4,66 @@
 
 **nya / nya** · 艾莉丝党 · 在代码与金融之间练爪
 
-[可搜索作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [公开 PDF](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
+[金融作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/) · [作品集 PDF](https://willow-tokoton-hitorineko.github.io/research-portfolio/portfolio-summary.pdf) · [写作间](https://willow-tokoton-hitorineko.github.io/narrative-studio/)
 
 </div>
 
 ## 🐾 ようこそ · 欢迎来到猫窝
 
-我是 Willow，也叫戆北在 coding。这里收录金融研究、数据分析和 AI 工作流作品：先把问题和口径讲清，再让代码、模型与人工复核各司其职。
+我是 Willow，也叫戆北在 coding。平时做金融研究和数据工具，最近在给没写完的长篇搭一张桌子。
 
-代码实现有 AI 编程工具参与；本人贡献、验证范围和局限以各仓库说明为准。新发布的方法演示使用合成数据，原始公司系统、业务记录和商业数据库不在公开范围。
+### 最近在做 · Narrative Studio 写作间
 
-## 🧭 第一次来 · 选一条阅读路线
+打开旧稿，在断掉的地方接着写。想改一段时，先把新稿和原文摆在一起，读过再决定留哪版。第一版已经可以试用，下一步先打磨长文导入以后怎么接着写，以及只有一个念头时怎么走到开篇。
 
-- **[看 AI 产品与规则工程](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=product#projects)**：[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass) → [FinDDR](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)，关注问题拆解、证据引用与质量门禁。
-- **[看金融研究与数据方法](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=research#projects)**：[稳定币研究](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research) → [风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)，关注样本资格、时间对齐与结果边界。
-- **[看工具交付与人工复核](https://willow-tokoton-hitorineko.github.io/research-portfolio/?route=tools#projects)**：[票据工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench) → [ZIP 工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)，关注运行步骤、异常处理和安全导出。
+[看工作台实录](https://willow-tokoton-hitorineko.github.io/narrative-studio/#film) · [源码与开发进度](https://github.com/Willow-Tokoton-Hitorineko/narrative-studio#开发进度)
 
-## 📦 猫箱 · 从这里看作品
+## 📦 猫箱 · 挑一件感兴趣的看
 
-### 已有公开作品
+### 研究与产品
 
-- [Narrative Studio · 写作间](https://github.com/Willow-Tokoton-Hitorineko/narrative-studio)：中文本地写作与 AI 共创工作台。续写旧稿、从灵感起稿，确认后才写入正文；公开演示使用虚构样稿。
-- **[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)**：A 股市场研究工作台，研究计划、取数校验和证据引用分层；不是涨跌预测或买卖建议。
-- **[FinDDR · 财小析](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)**：跨地区年报规则库与质量门禁归档；团队 Test Set Rank #12，个人贡献在仓库中单独说明。
-- **[PolicyScout](https://github.com/Willow-Tokoton-Hitorineko/policyscout)**：政府引导基金政策候选检索、筛选与去重原型，正式核验仍由研究者完成。
-- **[FF5 多因子研究](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy)**：课程研究归档；已发现同期间信息偏差，历史收益待重算；不与新风险预算演示混用结果。
-- **[政策文章采集工具](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler)**：早期采集与处理探索，保留为学习记录。
+- **[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)** · A 股研究工作台。把问题拆成研究计划，沿着数据和出处往下查。
+- **[FinDDR · 财小析](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)** · 跨地区年报规则与质量检查。团队测试集排名第 12，个人贡献见项目说明。
+- **[PolicyScout](https://github.com/Willow-Tokoton-Hitorineko/policyscout)** · 发现政府引导基金制度文本的缺口，整理待核实的政策线索。
+- **[稳定币研究方法](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research)** · 用合成记录演示企业分类、融资关系校验与分币种汇总。
+- **[月频风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)** · 用合成资产检查跟踪误差、调仓时点和交易成本。
 
-### 独立公开方法演示
+### 日常工具与旧作
 
-- **[稳定币研究方法](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research)**：企业业务证据、融资关系完整性与分币种汇总；只有合成企业和交易记录。
-- **[票据复核工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench)**：规则校验、人工确认、本机网页与安全 CSV 导出；不含原公司代码、OCR 或内部模板。
-- **[月频风险预算实验](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research)**：基准相对倾斜、跟踪误差约束、t+2 收益与漂移成本；合成实验不代表真实收益。
-- **[ZIP 中文兼容工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)**：UTF-8 文件名修复、macOS 元数据清理和 SHA-256 验证，拒绝覆盖已有输出。
+- **[票据复核工作台](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench)** · 用合成票据演示规则校验、人工确认和 CSV 导出。
+- **[ZIP 中文兼容工具](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool)** · 修复中文文件名乱码，清理 macOS 附带文件，并逐个验证 SHA-256。
+- **[FF5 多因子研究](https://github.com/Willow-Tokoton-Hitorineko/ff5-ashare-strategy)** · 课程研究归档。回测发现同期间信息偏差，收益仍待重算。
+- **[微信文章采集实验](https://github.com/Willow-Tokoton-Hitorineko/debut-wechat-article-crawler)** · 早期的 Python 与 Playwright 练习。
 
-各仓库保存具体运行命令和验证记录；[作品集](https://willow-tokoton-hitorineko.github.io/research-portfolio/)提供适合快速浏览的摘要。
+[按关键词查找金融作品](https://willow-tokoton-hitorineko.github.io/research-portfolio/#projects) · [作品集源码](https://github.com/Willow-Tokoton-Hitorineko/research-portfolio)
 
-## 🔧 猫のツール箱
+<details>
+<summary>测试记录与数据说明</summary>
 
-![公开作品使用的工具与方法](./assets/toolbox.svg)
-
-- **金融研究**：样本资格、字段与时点、风险归因、描述与识别边界。
-- **数据与流程**：关系校验、缺失处理、确定性计算、人工确认与导出护栏。
-- **工程交付**：离线演示、异常测试、文档与命令核对、脱敏发布。
-
-## 📊 验证记录 · 有证据才记战绩
-
-截至 **2026-10-14**，四个独立方法演示合计 **36 项离线测试通过**，Windows / Linux CI 均通过。它们验证公开演示的行为，不代表原实习系统的准确率或研究的真实收益。
+截至 2026-10-14，稳定币、票据、风险预算和 ZIP 四个演示合计通过 36 项离线测试，Windows 与 Linux 均通过。大势罗盘另有 46 项隔离测试，详见项目仓库。
 
 [稳定币 CI](https://github.com/Willow-Tokoton-Hitorineko/stablecoin-ecosystem-research/actions/workflows/verify.yml) · [票据 CI](https://github.com/Willow-Tokoton-Hitorineko/invoice-review-workbench/actions/workflows/verify.yml) · [风险预算 CI](https://github.com/Willow-Tokoton-Hitorineko/monthly-risk-model-research/actions/workflows/verify.yml) · [ZIP CI](https://github.com/Willow-Tokoton-Hitorineko/zip-compatibility-tool/actions/workflows/verify.yml)
 
-大势罗盘的 46 项测试记录见其仓库。日常贡献可直接查看本页下方的 GitHub 原生贡献图；这里不再依赖外部活动统计服务。
+公开演示用合成数据。各项目的贡献、数据出处与验证口径写在对应仓库。
+
+</details>
 
 ## 🐱 猫在追鱼干
-
-<p align="center"><sub>沿贡献格巡游 · GitHub Actions 每日生成；访问本页不会调用模型或金融接口。</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./output/github-contribution-grid-snake.svg" />
-  <img src="./output/github-contribution-grid-snake.svg" alt="贡献格巡游动画" width="100%" />
+  <img src="./output/github-contribution-grid-snake.svg" alt="沿贡献格巡游的小猫动画" width="100%" />
 </picture>
 
 [查看生成记录](https://github.com/Willow-Tokoton-Hitorineko/Willow-Tokoton-Hitorineko/actions/workflows/snake.yml)
 
 <details>
-<summary>🐾 猫窝小档案 · 点开有猫</summary>
+<summary>🐾 猫窝小档案</summary>
 
-称呼：Willow、猫猫、小蔡。喜欢抹茶、水里游、年糕和红豆；黄瓜、豌豆、哈密瓜暂时不接待。
+可以叫我 Willow，也可以叫猫猫。喜欢抹茶、游泳、年糕和红豆。黄瓜、豌豆和哈密瓜暂不接待。
 
-想学代码（魔法）的野猫，还在练爪。艾莉丝党，ひきこもり大学 · シャリア——这里是个人兴趣表达，不是正式教育或职业资历。
+ひきこもり大学 · シャリア是猫窝设定。
 
 ```text
  /\_/\
@@ -84,6 +74,4 @@
 
 </details>
 
----
-
-欢迎来猫窝串门、围观练爪进度。**Thanks for visiting · また遊びに来てにゃ**
+また遊びに来てにゃ。
