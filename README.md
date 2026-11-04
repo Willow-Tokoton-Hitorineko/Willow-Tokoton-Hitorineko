@@ -24,6 +24,7 @@
 
 ### 已有公开作品
 
+- [Narrative Studio · 写作间](https://github.com/Willow-Tokoton-Hitorineko/narrative-studio)：中文本地写作与 AI 共创工作台。续写旧稿、从灵感起稿，确认后才写入正文；公开演示使用虚构样稿。
 - **[大势罗盘](https://github.com/Willow-Tokoton-Hitorineko/market-compass)**：A 股市场研究工作台，研究计划、取数校验和证据引用分层；不是涨跌预测或买卖建议。
 - **[FinDDR · 财小析](https://github.com/Willow-Tokoton-Hitorineko/finddr-fincmini-pipeline)**：跨地区年报规则库与质量门禁归档；团队 Test Set Rank #12，个人贡献在仓库中单独说明。
 - **[PolicyScout](https://github.com/Willow-Tokoton-Hitorineko/policyscout)**：政府引导基金政策候选检索、筛选与去重原型，正式核验仍由研究者完成。
